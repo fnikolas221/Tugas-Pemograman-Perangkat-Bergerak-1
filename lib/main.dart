@@ -96,25 +96,25 @@ class _MyHomePageState extends State<MyHomePage> {
             // horizontal).
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image.asset("Foto.jpg",width:200),
+              Container(
+                padding: EdgeInsets.all(10.0),
+                color: Colors.blue,
+                child: Image.asset("assets/src/Foto.jpg",width:200),
+              ),
               SizedBox(height: 20),
               Text("NIM : 2009116075",style: TextStyle(
                   fontWeight: FontWeight.bold,
-                fontSize: 10
+                fontSize: 20
               ),),
               Text("Fernando Nikolas R",style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 10
+                  fontSize: 20
               ),)
             ],
           )
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
