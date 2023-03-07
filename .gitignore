@@ -7,6 +7,8 @@
 .atom/
 .buildlog/
 .history
+*.rtf
+*.docx
 .svn/
 migrate_working_dir/
 
