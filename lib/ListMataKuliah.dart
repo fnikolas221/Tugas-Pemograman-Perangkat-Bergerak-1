@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:latihan1/Quotes.dart';
+
 const DATA_MATKUL = [
   {
     "Hari": "Monday",
@@ -88,7 +90,7 @@ class MataKuliah extends StatelessWidget {
               color: Colors.blue,
               child: TextButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, "/page3");
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const Quotes()));
                   },
                   child: Text(
                     "Ke Halaman 3",

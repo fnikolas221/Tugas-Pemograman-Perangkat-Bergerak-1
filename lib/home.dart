@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan1/ListMataKuliah.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -68,7 +69,7 @@ class _HomeState extends State<Home> {
                     padding: const EdgeInsets.fromLTRB(25,3 , 25, 3),
                     color: Colors.blue,
                     child: TextButton(onPressed: (){
-                      Navigator.pushNamed(context, "/page2");
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const MataKuliah()));
                     },child: Text("Ke Halaman 2",style: TextStyle(color: Colors.white),))
                 ),
               ],
