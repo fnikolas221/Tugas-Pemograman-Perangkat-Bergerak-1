@@ -32,7 +32,6 @@ class _LoginState extends State<Login> {
                           usernameText = text;
                         });
                       },
-                      obscureText: true,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(90.0),
